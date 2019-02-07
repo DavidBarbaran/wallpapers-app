@@ -22,7 +22,7 @@
             android:layout_marginBottom="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:background="@drawable/item_rounded_button"
-            android:src="@drawable/image_heart"
+            android:src="@drawable/heart._image"
             android:id="@+id/imageButton"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
