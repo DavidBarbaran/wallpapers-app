@@ -34,5 +34,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
 
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
-
+    implementation 'com.github.jd-alexander:LikeButton:0.2.3'
+    implementation 'com.qhutch.bottomsheetlayout:bottomsheetlayout:0.1.6'
 }
