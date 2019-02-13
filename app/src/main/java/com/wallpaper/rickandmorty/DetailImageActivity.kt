@@ -14,5 +14,6 @@ class DetailImageActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail_image)
 
         bottom_sheet_layout.collapse()
+
     }
 }

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".FavoriteActivity">
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imageView"
         android:layout_width="20dp"
         android:layout_height="20dp"
@@ -14,6 +14,7 @@
         android:layout_marginTop="40dp"
         android:scaleType="centerCrop"
         android:src="@drawable/left_arrow_image"
+        android:background="@drawable/blank_rounded_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
