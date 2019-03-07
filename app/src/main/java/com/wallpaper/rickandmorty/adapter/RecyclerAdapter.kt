@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 
 import androidx.recyclerview.widget.RecyclerView
-import com.wallpaper.rickandmorty.DetailImageActivity
+import com.wallpaper.rickandmorty.activity.DetailImageActivity
 import com.wallpaper.rickandmorty.model.Post
 import com.wallpaper.rickandmorty.R
 
