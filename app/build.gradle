@@ -35,9 +35,17 @@ dependencies {
 
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'com.github.jd-alexander:LikeButton:0.2.3'
-    implementation 'com.qhutch.bottomsheetlayout:bottomsheetlayout:0.1.6'
     implementation 'androidx.cardview:cardview:1.0.0'
 
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.android.support:coordinatorlayout:28.0.0'
+
+    //picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //Retrofit y convertedGson
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+
+
 }

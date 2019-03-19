@@ -1,4 +1,4 @@
 package com.wallpaper.rickandmorty.model
 
-class Post {
+data class Post(val imageUrl:String,val category:String) {
 }

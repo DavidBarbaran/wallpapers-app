@@ -29,6 +29,8 @@
                 android:id="@+id/heart_button"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
                 android:layout_marginRight="45dp"
                 android:background="@drawable/blank_rounded_button"
                 app:srcCompat="@drawable/heart_image"/>
@@ -37,7 +39,9 @@
                 android:id="@+id/picture_button"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:padding="6dp"
                 android:layout_marginRight="45dp"
+                android:scaleType="centerCrop"
                 android:background="@drawable/blank_rounded_button"
                 app:srcCompat="@drawable/picture_image"/>
 
@@ -46,12 +50,16 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginRight="45dp"
+                android:padding="10dp"
+                android:scaleType="centerCrop"
                 android:background="@drawable/blank_rounded_button"
                 app:srcCompat="@drawable/download_image"/>
 
         <ImageButton
                 android:id="@+id/share_button"
                 android:layout_width="50dp"
+                android:scaleType="centerCrop"
+                android:padding="10dp"
                 android:layout_height="50dp"
                 android:background="@drawable/blank_rounded_button"
                 app:srcCompat="@drawable/share_image"/>
