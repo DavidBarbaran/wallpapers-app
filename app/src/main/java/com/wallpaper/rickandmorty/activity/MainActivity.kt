@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.facebook.drawee.backends.pipeline.Fresco
 import com.wallpaper.rickandmorty.Listener.RecyclerPostListener
 import com.wallpaper.rickandmorty.Networking.CallService
 import com.wallpaper.rickandmorty.Networking.RetrofitConfig
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Fresco.initialize(this);
         setContentView(R.layout.activity_main)
         initView()
         initService()
@@ -35,7 +37,7 @@ class MainActivity : AppCompatActivity() {
         adapter = RecyclerAdapter(object : RecyclerPostListener {
             override fun onClick(post: Post, position: Int) {
                 var intent = Intent(this@MainActivity, DetailImageActivity::class.java)
-                intent.putExtra("category", post.category)
+                intent.putExtra("imageUrl", post.imageUrl)
                 startActivity(intent)
             }
         })

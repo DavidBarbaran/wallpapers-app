@@ -1,11 +1,13 @@
 package com.wallpaper.rickandmorty.adapter
 
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
 import androidx.recyclerview.widget.RecyclerView
-import com.squareup.picasso.Picasso
+import com.facebook.drawee.view.SimpleDraweeView
+
 import com.wallpaper.rickandmorty.Listener.RecyclerPostListener
 import com.wallpaper.rickandmorty.model.Post
 import com.wallpaper.rickandmorty.R
@@ -32,7 +34,9 @@ class RecyclerAdapter(private val listener: RecyclerPostListener):
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         fun bind(post: Post ,listener: RecyclerPostListener) = with(itemView){
-            Picasso.get().load(post.imageUrl).into(post_image)
+            val uri = Uri.parse(post.imageUrl)
+            val draweeView = post_image as SimpleDraweeView
+            draweeView.setImageURI(uri)
 
             //Click evento desde la Interfaz ( Listener )
             setOnClickListener{listener.onClick(post,adapterPosition)}
