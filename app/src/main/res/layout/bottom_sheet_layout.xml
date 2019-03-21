@@ -29,7 +29,7 @@
                 android:id="@+id/heart_button"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:scaleType="centerCrop"
                 android:layout_marginRight="45dp"
                 android:background="@drawable/blank_rounded_button"
@@ -39,7 +39,7 @@
                 android:id="@+id/picture_button"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:padding="6dp"
+                android:padding="11dp"
                 android:layout_marginRight="45dp"
                 android:scaleType="centerCrop"
                 android:background="@drawable/blank_rounded_button"
@@ -50,7 +50,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginRight="45dp"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:scaleType="centerCrop"
                 android:background="@drawable/blank_rounded_button"
                 app:srcCompat="@drawable/download_image"/>
@@ -59,7 +59,7 @@
                 android:id="@+id/share_button"
                 android:layout_width="50dp"
                 android:scaleType="centerCrop"
-                android:padding="10dp"
+                android:padding="15dp"
                 android:layout_height="50dp"
                 android:background="@drawable/blank_rounded_button"
                 app:srcCompat="@drawable/share_image"/>
@@ -83,10 +83,13 @@
         <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_moreimages"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="0dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="25dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView2">
 
