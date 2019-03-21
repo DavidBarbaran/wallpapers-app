@@ -3,7 +3,7 @@
     <string name="title_main">Home</string>
     <string name="description_text">Descarga y comparte imágenes de Rick y Morty</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="moreimage">Más imágenes</string>
     <string name="title_favorite">Favoritos</string>
