@@ -13,7 +13,8 @@
             android:layout_marginTop="40dp"
             android:text="@string/title_main"
             android:textSize="30sp"
-            app:layout_constraintEnd_toStartOf="@+id/button_favorite"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/nunitosans_regular"
             app:layout_constraintHorizontal_bias="0.1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -33,8 +34,10 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
             android:layout_marginTop="100dp"
+            android:fontFamily="@font/nunitosans_light"
             android:text="@string/description_text"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -50,15 +53,11 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="14dp"
             android:layout_marginEnd="8dp"
-            android:scrollbars="vertical|none"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.0">
-
-    </androidx.recyclerview.widget.RecyclerView>
-
+            app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
