@@ -1,7 +1,5 @@
 package com.wallpaper.rickandmorty.adapter
 
-
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,15 +7,14 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
 import com.wallpaper.rickandmorty.Listener.RecyclerPostListener
-import com.wallpaper.rickandmorty.activity.DetailImageActivity
 import com.wallpaper.rickandmorty.model.Post
 import com.wallpaper.rickandmorty.R
 import kotlinx.android.synthetic.main.item_recycler.view.*
 
+class RecyclerAdapter(private val listener: RecyclerPostListener):
+    RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
 
-class RecyclerAdapter(private val items:List<Post>,private val listener: RecyclerPostListener):
-        RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
-
+    lateinit var items:List<Post>
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_recycler,parent,false)
@@ -25,7 +22,7 @@ class RecyclerAdapter(private val items:List<Post>,private val listener: Recycle
     }
 
     override fun getItemCount(): Int {
-        return items.size
+        return if(::items.isInitialized) items.size else 0
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
