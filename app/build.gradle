@@ -18,6 +18,10 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BASE_URL", "\"https://wallpaper-app-9a22c.firebaseio.com/\""
+        }
+        debug {
+            buildConfigField "String", "BASE_URL", "\"https://wallpaper-app-9a22c.firebaseio.com/\""
         }
     }
 }
