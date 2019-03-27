@@ -8,4 +8,25 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/gray900</item>
+        <item name="android:statusBarColor">@color/gray900</item>
+    </style>
+
+    <style name="TextTitleTheme">
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/nunitosans_regular</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextBodyTheme">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/nunitosans_light</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
 </resources>
