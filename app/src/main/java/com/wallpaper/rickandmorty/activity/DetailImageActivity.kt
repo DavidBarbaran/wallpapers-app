@@ -40,8 +40,7 @@ class DetailImageActivity : AppCompatActivity() {
     fun initView(){
         val image = intent.getStringExtra("imageUrl")
         var uri = Uri.parse(image)
-        val draweeView = detail_layout as SimpleDraweeView
-        draweeView.setImageURI(uri)
+        (detail_layout as SimpleDraweeView).setImageURI(uri)
 
 
         //recycler_moreimages.layoutManager = LinearLayoutManager(this)

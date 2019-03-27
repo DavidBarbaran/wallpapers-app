@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.facebook.drawee.view.SimpleDraweeView
 
-import com.wallpaper.rickandmorty.Listener.RecyclerPostListener
+import com.wallpaper.rickandmorty.listener.RecyclerPostListener
 import com.wallpaper.rickandmorty.model.Post
 import com.wallpaper.rickandmorty.R
 import kotlinx.android.synthetic.main.item_recycler.view.*
