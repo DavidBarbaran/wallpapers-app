@@ -1,4 +1,4 @@
-package com.wallpaper.rickandmorty.networking
+package com.wallpaper.rickandmorty.Networking
 
 import com.wallpaper.rickandmorty.BuildConfig
 import okhttp3.OkHttpClient

@@ -1,4 +1,4 @@
-package com.wallpaper.rickandmorty.listener
+package com.wallpaper.rickandmorty.Listener
 
 import com.wallpaper.rickandmorty.model.Post
 

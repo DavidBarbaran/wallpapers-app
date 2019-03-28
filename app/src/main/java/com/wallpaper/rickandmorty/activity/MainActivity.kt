@@ -6,9 +6,9 @@ import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.facebook.drawee.backends.pipeline.Fresco
-import com.wallpaper.rickandmorty.listener.RecyclerPostListener
-import com.wallpaper.rickandmorty.networking.CallService
-import com.wallpaper.rickandmorty.networking.RetrofitConfig
+import com.wallpaper.rickandmorty.Listener.RecyclerPostListener
+import com.wallpaper.rickandmorty.Networking.CallService
+import com.wallpaper.rickandmorty.Networking.RetrofitConfig
 import com.wallpaper.rickandmorty.R
 import com.wallpaper.rickandmorty.adapter.RecyclerAdapter
 import com.wallpaper.rickandmorty.model.Post
