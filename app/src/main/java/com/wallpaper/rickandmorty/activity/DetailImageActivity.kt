@@ -8,7 +8,10 @@ import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.facebook.drawee.backends.pipeline.Fresco
+import com.facebook.drawee.interfaces.DraweeController
+import com.facebook.drawee.view.DraweeView
 import com.facebook.drawee.view.SimpleDraweeView
+import com.facebook.imagepipeline.request.ImageRequest
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.wallpaper.rickandmorty.R
 import com.wallpaper.rickandmorty.adapter.RecyclerAdapter
@@ -39,13 +42,15 @@ class DetailImageActivity : AppCompatActivity() {
     }
     fun initView(){
         val image = intent.getStringExtra("imageUrl")
+
         var uri = Uri.parse(image)
-        val draweeView = detail_layout as SimpleDraweeView
-        draweeView.setImageURI(uri)
+        var controlleruri:DraweeController   = Fresco.newDraweeControllerBuilder()
+            .setUri(uri)
+            .setOldController(detail_layout.controller).build()
+            detail_layout.controller = controlleruri
 
-
-        //recycler_moreimages.layoutManager = LinearLayoutManager(this)
-        //recycler_moreimages.layoutManager= GridLayoutManager( this,2)
-        //recycler_moreimages.adapter = RecyclerAdapter()
     }
 }
+
+
+

@@ -1,4 +1,4 @@
-package com.wallpaper.rickandmorty.Networking
+package com.wallpaper.rickandmorty.networking
 
 import com.wallpaper.rickandmorty.model.Post
 import retrofit2.Call
