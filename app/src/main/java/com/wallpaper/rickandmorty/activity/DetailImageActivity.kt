@@ -49,10 +49,6 @@ class DetailImageActivity : AppCompatActivity() {
             .setOldController(detail_layout.controller).build()
             detail_layout.controller = controlleruri
 
-
-        //recycler_moreimages.layoutManager = LinearLayoutManager(this)
-        //recycler_moreimages.layoutManager= GridLayoutManager( this,2)
-        //recycler_moreimages.adapter = RecyclerAdapter()
     }
 }
 
