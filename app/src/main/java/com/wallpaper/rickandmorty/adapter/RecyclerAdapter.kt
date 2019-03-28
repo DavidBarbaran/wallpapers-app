@@ -6,11 +6,14 @@ import android.view.View
 import android.view.ViewGroup
 
 import androidx.recyclerview.widget.RecyclerView
+import com.facebook.drawee.backends.pipeline.Fresco
+import com.facebook.drawee.interfaces.DraweeController
 import com.facebook.drawee.view.SimpleDraweeView
 
-import com.wallpaper.rickandmorty.Listener.RecyclerPostListener
+import com.wallpaper.rickandmorty.listener.RecyclerPostListener
 import com.wallpaper.rickandmorty.model.Post
 import com.wallpaper.rickandmorty.R
+import kotlinx.android.synthetic.main.activity_detail_image.*
 import kotlinx.android.synthetic.main.item_recycler.view.*
 
 class RecyclerAdapter(private val listener: RecyclerPostListener):
@@ -35,8 +38,12 @@ class RecyclerAdapter(private val listener: RecyclerPostListener):
 
         fun bind(post: Post ,listener: RecyclerPostListener) = with(itemView){
             val uri = Uri.parse(post.imageUrl)
-            val draweeView = post_image as SimpleDraweeView
-            draweeView.setImageURI(uri)
+
+            var controlleruri: DraweeController = Fresco.newDraweeControllerBuilder()
+                .setUri(uri)
+                .setOldController(post_image.controller).build()
+            post_image.controller = controlleruri
+
 
             //Click evento desde la Interfaz ( Listener )
             setOnClickListener{listener.onClick(post,adapterPosition)}
