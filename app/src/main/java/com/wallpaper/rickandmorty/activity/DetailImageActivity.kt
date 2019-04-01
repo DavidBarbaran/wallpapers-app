@@ -31,9 +31,7 @@ class DetailImageActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail_image)
         initView()
 
-
-        var bottomsheetLayout = findViewById<LinearLayout>(R.id.bottom_sheet)
-        bottomSheetBehavior = BottomSheetBehavior.from<LinearLayout>(bottomsheetLayout)
+        bottomSheetBehavior = BottomSheetBehavior.from<LinearLayout>(bottom_sheet)
 
         ibutton_back.setOnClickListener {
                 finish()
